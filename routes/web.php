@@ -91,5 +91,18 @@ Route::get('/village/edit/{id}', "VillageController@edit");
 Route::post('/village/update', "VillageController@update");
 Route::post("/village/save", "VillageController@save");
 Route::get("/village/search", "VillageController@search");
-
+// branch route
+Route::get('/branch', "BranchController@index");
+Route::get('/branch/edit/{id}', "BranchController@edit");
+Route::get("/branch/delete/{id}", "BranchController@delete");
+Route::get("/branch/create", "BranchController@create");
+Route::post('/branch/save', "BranchController@save");
+Route::post('/branch/update', "BranchController@update");
+// department route
+Route::get('/department', "DepartmentController@index");
+Route::get('/department/edit/{id}', "DepartmentController@edit");
+Route::get('/department/delete/{id}', "DepartmentController@delete");
+Route::get('/department/create', "DepartmentController@create");
+Route::post('/department/save', "DepartmentController@save");
+Route::post('/department/update', "DepartmentController@update");
 Route::get('/test', "CompanyController@test");
