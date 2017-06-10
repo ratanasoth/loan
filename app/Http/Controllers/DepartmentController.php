@@ -17,4 +17,23 @@ class DepartmentController extends Controller
     {
         return view('backend.departments.create');
     }
+    public function save(Request $r)
+    {
+
+    }
+    // load edit form
+    public function edit($id)
+    {
+
+    }
+    public function update(Request $r)
+    {
+
+    }
+    // delete
+    public function delete($id)
+    {
+        DB::table('departments')->where('id', $id)->delete();
+        return redirect('/department');
+    }
 }
