@@ -1,4 +1,5 @@
 <?php
+/**/
 $company = "Company";
 $branch = "Branch";
 $department = "Department";
@@ -19,10 +20,13 @@ $save_change = "Save Changes";
 $cancel = "Cancel";
 $logout = "Logout";
 $dashboard = "Dashboard";
-$security = "Security";
-$setting = "Settings";
+$security_menu = "Security";
+$settings = "Settings";
 $action = "Actions";
 $new = "New";
 $edit = "Edit";
 $delete = "Delete";
 $update = "Update";
+$delete_confirm = "You want to delete?";
+$role_permission = "Role & Permission";
+/**/

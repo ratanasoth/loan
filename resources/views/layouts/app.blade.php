@@ -1,3 +1,5 @@
+<?php $lang = Auth::user()->language .".php"; ?>
+<?php include(app_path()."/lang/". $lang); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +69,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="{{url('/logout')}}" class="btn btn-danger btn-flat">ចាកចេញ</a>
+                  <a href="{{url('/logout')}}" class="btn btn-danger btn-flat">{{$logout}}</a>
                 </div>
               </li>
             </ul>
@@ -94,36 +96,36 @@
       <ul class="sidebar-menu">
         <li class="{{$sg1=='home'?'active':''}}">
           <a href="{{url('/home')}}">
-            <i class="fa fa-dashboard text-primary"></i> <span>ទំព័រមុខ</span>
+            <i class="fa fa-dashboard text-primary"></i> <span>{{$dashboard}}</span>
           </a>
         </li>
         <li class="treeview <?php if (in_array($sg1, $security)) { echo 'active'; } ?>">
           <a href="#">
-            <i class="fa fa-key text-danger"></i> <span>សុវត្ថិភាព</span>
+            <i class="fa fa-key text-danger"></i> <span>{{$security_menu}}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{$sg1=='user'?'active':''}}"><a href="{{url('/user')}}"><i class="fa fa-user text-primary"></i> អ្នកប្រើប្រាស់</a></li>
-            <li class="{{$sg1=='role'?'active':''}}"><a href="{{url('/role')}}"><i class="fa fa-road text-info"></i> តួនាទី និងសិទ្ធ</a></li>
+            <li class="{{$sg1=='user'?'active':''}}"><a href="{{url('/user')}}"><i class="fa fa-user text-primary"></i> {{$user}}</a></li>
+            <li class="{{$sg1=='role'?'active':''}}"><a href="{{url('/role')}}"><i class="fa fa-road text-info"></i> {{$role_permission}}</a></li>
           </ul>
         </li>
         <li class="treeview <?php if (in_array($sg1, $setting)) { echo 'active'; } ?>">
           <a href="#">
-            <i class="fa fa-cog text-success"></i> <span>កំណត់ត្រា</span>
+            <i class="fa fa-cog text-success"></i> <span>{{$settings}}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{$sg1=='province'?'active':''}}"><a href="{{url('/province')}}"><i class="fa fa-map-marker"></i> Province</a></li>
-            <li class="{{$sg1=='district'?'active':''}}"><a href="{{url('/district')}}"><i class="fa fa-tag"></i> District</a></li>
-            <li class="{{$sg1=='commune'?'active':''}}"><a href="{{url('/commune')}}"><i class="fa fa-reorder"></i> Commune</a></li>
-            <li class="{{$sg1=='village'?'active':''}}"><a href="{{url('/village')}}"><i class="fa fa-star"></i> Village</a></li>
-            <li class="{{$sg1=='company'?'active':''}}"><a href="{{url('/company')}}"><i class="fa fa-building"></i> Company</a></li>
-            <li class="{{$sg1=='branch'?'active':''}}"><a href="{{url('/branch')}}"><i class="fa fa-building"></i> Branch</a></li>
-            <li class="{{$sg1=='department'?'active':''}}"><a href="{{url('/department')}}"><i class="fa fa-building"></i> Department</a></li>
+            <li class="{{$sg1=='province'?'active':''}}"><a href="{{url('/province')}}"><i class="fa fa-map-marker"></i> {{$province}}</a></li>
+            <li class="{{$sg1=='district'?'active':''}}"><a href="{{url('/district')}}"><i class="fa fa-tag"></i> {{$district}}</a></li>
+            <li class="{{$sg1=='commune'?'active':''}}"><a href="{{url('/commune')}}"><i class="fa fa-reorder"></i> {{$commune}}</a></li>
+            <li class="{{$sg1=='village'?'active':''}}"><a href="{{url('/village')}}"><i class="fa fa-star"></i> {{$village}}</a></li>
+            <li class="{{$sg1=='company'?'active':''}}"><a href="{{url('/company')}}"><i class="fa fa-building"></i> {{$company}}</a></li>
+            <li class="{{$sg1=='branch'?'active':''}}"><a href="{{url('/branch')}}"><i class="fa fa-location-arrow"></i> {{$branch}}</a></li>
+            <li class="{{$sg1=='department'?'active':''}}"><a href="{{url('/department')}}"><i class="fa fa-stop"></i> {{$department}}</a></li>
           </ul>
         </li>
       </ul>
@@ -133,6 +135,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <section class="content">
+
       @yield('content')
     </section>
   </div>
