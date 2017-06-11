@@ -1,9 +1,11 @@
 @extends('layouts.app')
 @section('content')
+    <?php $lang = Auth::user()->language .".php"; ?>
+    <?php include(app_path()."/lang/". $lang); ?>
     <div class="panel">
         <div class="panel-heading bg-primary">
         <span class="panel-title">
-           <strong>List Branches</strong>
+           <strong><?php echo $branch_list ?></strong>
         </span>
         </div>
         <div class="panel-body pn">
@@ -24,12 +26,12 @@
                             > 
                             </i>
                         </a>
-                        ID
+                        {{$id}}
                     </th>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Company ID</th>
-                    <th>Action</th>
+                    <th>{{$code}}</th>
+                    <th>{{$name}}</th>
+                    <th>{{$company}}</th>
+                    <th>{{$action}}</th>
                 </tr>
                 </thead>
                 <tbody>

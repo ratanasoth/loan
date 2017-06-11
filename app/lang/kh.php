@@ -28,3 +28,6 @@ $delete = "លុប";
 $update = "ធ្វើបច្ចុប្បន្នភាព";
 $delete_confirm = "តើអ្នកពិតជាចង់លុបមែនទេ?";
 $role_permission ="តួនាទី និងសិទ្ធិ";
+$branch_list =  "បញ្ជីសាខា";
+$new_branch = "បង្កើតសាខាថ្មី";
+$edit_brand = "កែសម្រួលសាខា";

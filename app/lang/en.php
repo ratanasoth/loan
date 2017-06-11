@@ -29,4 +29,7 @@ $delete = "Delete";
 $update = "Update";
 $delete_confirm = "You want to delete?";
 $role_permission = "Role & Permission";
+$branch_list =  "Branch List";
+$new_branch = "New Branch";
+$edit_brand = "Edit Branch"
 /**/

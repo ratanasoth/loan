@@ -25,7 +25,6 @@
                     @endif
                     <div class="col-sm-6">
                         {{ csrf_field() }}
-
                         <div class="form-group">
                             <label for="code" class="control-label col-sm-4">{{$code}}</label>
                             <div class="col-sm-8">
