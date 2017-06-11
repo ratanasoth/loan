@@ -84,7 +84,7 @@
       $sg1 = Request::segment(1);
       $sg2 = Request::segment(2);
       $security = array('user','role','permission','permissionrole', 'module');
-      $setting = array('province','district','commune','village', 'company');
+      $setting = array('province','district','commune','village', 'company', 'branch','department');
       ?>
       <!-- Sidebar user panel -->
       <div class="user-panel">
@@ -117,11 +117,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{$sg1=='province'?'active':''}}"><a href="{{url('/province')}}"><i class="fa fa-map-marker"></i> ខេត្ត/ក្រុង</a></li>
-            <li class="{{$sg1=='district'?'active':''}}"><a href="{{url('/district')}}"><i class="fa fa-tag"></i> ស្រុក/ខណ្ឌ</a></li>
-            <li class="{{$sg1=='commune'?'active':''}}"><a href="{{url('/commune')}}"><i class="fa fa-reorder"></i> ឃុំ/សង្កាត់</a></li>
-            <li class="{{$sg1=='village'?'active':''}}"><a href="{{url('/village')}}"><i class="fa fa-star"></i> ភូមិ</a></li>
-            <li class="{{$sg1=='company'?'active':''}}"><a href="{{url('/company')}}"><i class="fa fa-building"></i> ក្រុមហ៊ុន</a></li>
+            <li class="{{$sg1=='province'?'active':''}}"><a href="{{url('/province')}}"><i class="fa fa-map-marker"></i> Province</a></li>
+            <li class="{{$sg1=='district'?'active':''}}"><a href="{{url('/district')}}"><i class="fa fa-tag"></i> District</a></li>
+            <li class="{{$sg1=='commune'?'active':''}}"><a href="{{url('/commune')}}"><i class="fa fa-reorder"></i> Commune</a></li>
+            <li class="{{$sg1=='village'?'active':''}}"><a href="{{url('/village')}}"><i class="fa fa-star"></i> Village</a></li>
+            <li class="{{$sg1=='company'?'active':''}}"><a href="{{url('/company')}}"><i class="fa fa-building"></i> Company</a></li>
+            <li class="{{$sg1=='branch'?'active':''}}"><a href="{{url('/branch')}}"><i class="fa fa-building"></i> Branch</a></li>
+            <li class="{{$sg1=='department'?'active':''}}"><a href="{{url('/department')}}"><i class="fa fa-building"></i> Department</a></li>
           </ul>
         </li>
       </ul>
