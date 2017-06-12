@@ -113,3 +113,10 @@ Route::get("/position/delete/{id}", "PositionController@delete");
 Route::get("/position/create", "PositionController@create");
 Route::post('/position/save', "PositionController@save");
 Route::post('/position/update', "PositionController@update");
+// Loan Category route
+Route::get('/loancategory', "LoanCategoryController@index");
+Route::get('/loancategory/edit/{id}', "LoanCategoryController@edit");
+Route::get("/loancategory/delete/{id}", "LoanCategoryController@delete");
+Route::get("/loancategory/create", "LoanCategoryController@create");
+Route::post('/loancategory/save', "LoanCategoryController@save");
+Route::post('/loancategory/update', "LoanCategoryController@update");

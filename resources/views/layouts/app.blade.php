@@ -86,7 +86,7 @@
       $sg1 = Request::segment(1);
       $sg2 = Request::segment(2);
       $security = array('user','role','permission','permissionrole', 'module');
-      $setting = array('province','district','commune','village', 'company', 'branch','department','position');
+      $setting = array('province','district','commune','village', 'company', 'branch','department','position','loancategory');
       ?>
       <!-- Sidebar user panel -->
       <div class="user-panel">
@@ -127,6 +127,7 @@
             <li class="{{$sg1=='branch'?'active':''}}"><a href="{{url('/branch')}}"><i class="fa fa-location-arrow"></i> {{$branch}}</a></li>
             <li class="{{$sg1=='department'?'active':''}}"><a href="{{url('/department')}}"><i class="fa fa-stop"></i> {{$department}}</a></li>
             <li class="{{$sg1=='position'?'active':''}}"><a href="{{url('/position')}}"><i class="fa fa-shield"></i> {{$position}}</a></li>
+            <li class="{{$sg1=='loancategory'?'active':''}}"><a href="{{url('/loancategory')}}"><i class="fa fa-shield"></i> {{$loan_category}}</a></li>
           </ul>
         </li>
       </ul>

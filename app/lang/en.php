@@ -36,4 +36,9 @@ $position = "Position";
 $position_list = "Position List";
 $new_position = "New Position";
 $edit_position = "Edit Position";
+$loan_category = "Loan Category";
+$loan_category_list = "Loan Category List";
+$khmer_description = "Khmer Description";
+$new_loan_category = "New Loan Category";
+$edit_loan_category = "Edit Loan Category";
 /**/
