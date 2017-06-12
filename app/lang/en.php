@@ -31,5 +31,9 @@ $delete_confirm = "You want to delete?";
 $role_permission = "Role & Permission";
 $branch_list =  "Branch List";
 $new_branch = "New Branch";
-$edit_brand = "Edit Branch"
+$edit_brand = "Edit Branch";
+$position = "Position";
+$position_list = "Position List";
+$new_position = "New Position";
+$edit_position = "Edit Position";
 /**/

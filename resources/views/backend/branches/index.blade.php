@@ -43,7 +43,7 @@
                         <td>{{$bra->company}}</td>
                         <td>
                             <a href="{{url('/branch/edit/'.$bra->id)}}" title="កែប្រែ"><i class="fa fa-edit text-success"></i></a> &nbsp;&nbsp;
-                            <a href="{{url('/branch/delete/'.$bra->id)}}" title="លុប" onclick="return confirm('Are you sure to delete?')"><i class="fa fa-trash text-danger"></i></a>
+                            <a href="{{url('/branch/delete/'.$bra->id)}}" title="លុប" onclick="return confirm('{{$delete_confirm}}')"><i class="fa fa-trash text-danger"></i></a>
                         </td>
                     </tr>
                 @endforeach

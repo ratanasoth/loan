@@ -31,3 +31,7 @@ $role_permission ="តួនាទី និងសិទ្ធិ";
 $branch_list =  "បញ្ជីសាខា";
 $new_branch = "បង្កើតសាខាថ្មី";
 $edit_brand = "កែសម្រួលសាខា";
+$position = "តួនាទី";
+$position_list = "បញ្ជីតួនាទី";
+$new_position = "បង្កើតតួនាទីថ្មី";
+$edit_position = "កែសមរួលតួនាទី";

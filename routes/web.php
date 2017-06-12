@@ -106,3 +106,10 @@ Route::get('/department/create', "DepartmentController@create");
 Route::post('/department/save', "DepartmentController@save");
 Route::post('/department/update', "DepartmentController@update");
 Route::get('/test', "CompanyController@test");
+// Position route
+Route::get('/position', "PositionController@index");
+Route::get('/position/edit/{id}', "PositionController@edit");
+Route::get("/position/delete/{id}", "PositionController@delete");
+Route::get("/position/create", "PositionController@create");
+Route::post('/position/save', "PositionController@save");
+Route::post('/position/update', "PositionController@update");
